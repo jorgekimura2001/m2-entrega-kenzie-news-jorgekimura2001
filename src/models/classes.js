@@ -1,15 +1,13 @@
-class app {
+export default class app {
 
-    static requisicao(){
+   static async requisicao(){
     
-        fetch('https://kenzie-news-api.herokuapp.com/api/news')
+        await fetch('https://kenzie-news-api.herokuapp.com/api/news')
         .then(response => response.json())
-        .then((data)=>{
+        .then((data)=> {
            // console.log(data)
-            data.forEach(element => {
-                //console.log(element)
-                console.log(app.template(element))
-            });
+            data.forEach(element => app.template(element));
+
             //AQUI VOCÊ PODE FAZER UM LOOP PARA PEGAR TODAS AS NOTÍCIAS
             //FAZER A CRIAÇÃO DO TEMPLATE
             
@@ -18,6 +16,7 @@ class app {
     }
     
     static template(materia){
+        const main = document.querySelector('main')
       const divMateria = document.createElement('div');
       const categoria = document.createElement('p');
       const titulo = document.createElement('h1');
@@ -27,13 +26,11 @@ class app {
 
       categoria.innerText = `${materia.categoria}`;
       titulo.innerText = `${materia.titulo}`;
-      resumo.innerText = `${materia.resumo}`
-      fonte.innerText = `${materia.fonte}`
-      imagem.src = `${materia.imagem}`
+      resumo.innerText = `${materia.resumo}`;
+      fonte.innerText = `${materia.fonte}`;
+      imagem.src = `${materia.imagem}`;
     
-      divMateria.append(categoria, titulo, resumo, fonte, imagem)
-      return divMateria
-    }
-    
-    }
-app.requisicao()
+      divMateria.append(categoria, titulo, resumo, fonte, imagem);
+      main.append(divMateria)
+    }    
+}
