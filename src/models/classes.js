@@ -6,7 +6,9 @@ class app {
         .then(response => response.json())
         .then((data)=>{
             console.log(data)
-    
+            data.forEach(element => {
+                console.log(element)
+            });
             //AQUI VOCÊ PODE FAZER UM LOOP PARA PEGAR TODAS AS NOTÍCIAS
             //FAZER A CRIAÇÃO DO TEMPLATE
             
