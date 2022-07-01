@@ -1,4 +1,10 @@
-import app from './models/classes.js'
 import Requisicao from '../src/controllers/Requisicao.js'
+import Cards from './models/Cards.js'
 
-console.log(await Requisicao.pegarDados())
+const conjutoDados = await Requisicao.pegarDados();
+const main = document.querySelector('main')
+
+const noticias = conjutoDados.map(dado => {
+    return Cards.criarCards(dado)
+})
+main.append(...noticias)
