@@ -1,6 +1,5 @@
-export default class Cards {
-
-    static criarCards(materia){
+export default class CardPrincipal{
+    static criarCardPrincipal(materia){
       const divMateria = document.createElement('div');
       const categoria = document.createElement('p');
       const titulo = document.createElement('h1');
@@ -14,7 +13,7 @@ export default class Cards {
       fonte.innerText = `${materia.fonte}`;
       imagem.src = `${materia.imagem}`;
     
-      divMateria.append(imagem, categoria, titulo, resumo, fonte);
+      divMateria.append( categoria, titulo, resumo, fonte, imagem);
       return divMateria
-    }    
+    }
 }
