@@ -14,6 +14,9 @@ export function noticiaPesquisada(idNoticia){
     const noticiaEncontrada = noticias.find(elem => {
         return elem.id === idNoticia
     })
-    CardPrincipal.criarCardPrincipal(noticiaEncontrada)
+    console.dir(noticiaEncontrada)
+    const cardNoticiaPesquisada = CardPrincipal.criarCardPrincipal(noticiaEncontrada)
+    console.log(cardNoticiaPesquisada)
+    return cardNoticiaPesquisada
 }
 noticiaPesquisada('3');
