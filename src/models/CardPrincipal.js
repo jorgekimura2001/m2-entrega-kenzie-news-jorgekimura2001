@@ -13,7 +13,7 @@ export default class CardPrincipal{
       fonte.innerText = `${materia.fonte}`;
       imagem.src = `${materia.imagem}`;
     
-      divMateria.append( categoria, titulo, resumo, fonte, imagem);
+      divMateria.append(categoria, titulo, resumo, fonte, imagem);
       return divMateria
     }
 }
