@@ -1,10 +1,19 @@
 import Requisicao from "./Requisicao.js";
 import Cards from "../models/Cards.js";
+import CardPrincipal from "../models/CardPrincipal.js";
 
-const conjutoDados = await Requisicao.pegarDados();
-console.log(conjutoDados)
+export const conjutoDados = await Requisicao.pegarDados();
 
-const noticias = conjutoDados.map(dado => {
+
+export const noticias = conjutoDados.map(dado => {
     return Cards.criarCards(dado)
 })
-console.log(noticias)
+
+export function noticiaPesquisada(idNoticia){
+
+    const noticiaEncontrada = noticias.find(elem => {
+        return elem.id === idNoticia
+    })
+    CardPrincipal.criarCardPrincipal(noticiaEncontrada)
+}
+noticiaPesquisada('3');
