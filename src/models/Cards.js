@@ -2,6 +2,7 @@ export default class Cards {
 
     static criarCards(materia){
       const divMateria = document.createElement('div');
+      divMateria.id = materia.id
       const categoria = document.createElement('p');
       const titulo = document.createElement('h1');
       const resumo = document.createElement('p');
