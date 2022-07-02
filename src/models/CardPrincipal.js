@@ -1,8 +1,8 @@
 export default class CardPrincipal{
   static criarCardPrincipal(materia) {
     const [img, span, h1, p, h3 ] = materia.childNodes;
-   
-    const divMateriaPrincipal = document.querySelector('.card__principal');
+  
+    const divMateriaPrincipal = document.createElement("div");
     const categoria = document.createElement('span');
     const titulo = document.createElement('h1');
     const resumo = document.createElement('p');

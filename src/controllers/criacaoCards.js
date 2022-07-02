@@ -8,7 +8,7 @@ export const noticias = conjutoDados.map(dado => {
     return Cards.criarCards(dado);
 })
 
-export function noticiaPesquisada(idNoticia){
+export function noticiaPesquisada(idNoticia = '2'){
     const noticiaEncontrada = noticias.find(elem => elem.id === idNoticia);
     const cardNoticiaPesquisada = CardPrincipal.criarCardPrincipal(noticiaEncontrada);
     return cardNoticiaPesquisada
