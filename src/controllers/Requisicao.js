@@ -4,9 +4,6 @@ export default class Requisicao {
     static async pegarDados(){
         const dados = await fetch(Requisicao.url)
         .then(response => response.json())
-        // .then((data) => {
-        //     console.log(data)
-        // })
         return dados
 }
 }
