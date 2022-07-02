@@ -2,14 +2,22 @@ import Requisicao from "./Requisicao.js";
 import Cards from "../models/Cards.js";
 import CardPrincipal from "../models/CardPrincipal.js";
 
-export const conjutoDados = await Requisicao.pegarDados();
+export const conjuntoDados = await Requisicao.pegarDados();
 
-export const noticias = conjutoDados.map(dado => {
+export const noticias = conjuntoDados.map(dado => {
     return Cards.criarCards(dado);
 })
 
-export function noticiaPesquisada(idNoticia = '2'){
-    const noticiaEncontrada = noticias.find(elem => elem.id === idNoticia);
-    const cardNoticiaPesquisada = CardPrincipal.criarCardPrincipal(noticiaEncontrada);
-    return cardNoticiaPesquisada
+export function noticiaPesquisada(idNoticia) {
+    if (idNoticia !== undefined) {
+        const noticiaEncontrada = noticias.find(elem => elem.id === idNoticia);
+        const cardNoticiaPesquisada = CardPrincipal.criarCardPrincipal(noticiaEncontrada);
+        return cardNoticiaPesquisada
+    }
+    else {
+        const noticiaEncontrada = noticias.find(elem => elem.id === '2');
+        const cardNoticiaPesquisada =
+          CardPrincipal.criarCardPrincipal(noticiaEncontrada);
+        return cardNoticiaPesquisada;
+    }
 }
