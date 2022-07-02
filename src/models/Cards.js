@@ -1,8 +1,8 @@
 export default class Cards {
 
     static criarCards(materia){
-      const divMateria = document.createElement('div');
-      divMateria.id = materia.id
+      const divMateriasConteudo = document.createElement('div')
+      divMateriasConteudo.id = materia.id;
       const categoria = document.createElement('span');
       categoria.classList.add('card__categoria')
       const titulo = document.createElement('h1');
@@ -15,8 +15,8 @@ export default class Cards {
       resumo.innerText = `${materia.resumo}`;
       fonte.innerText = `Fonte: ${materia.fonte}.`;
       imagem.src = `${materia.imagem}`;
-    
-      divMateria.append(imagem, categoria, titulo, resumo, fonte);
-      return divMateria
+      
+      divMateriasConteudo.append(imagem, categoria, titulo, resumo, fonte);
+      return divMateriasConteudo;
     }    
 }
