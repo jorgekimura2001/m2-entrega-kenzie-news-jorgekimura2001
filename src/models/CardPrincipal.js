@@ -4,16 +4,16 @@ export default class CardPrincipal{
       const materiaPrincipal = [...materia.childNodes]
       const [img, span, h1, p, h3] = materiaPrincipal
       console.dir(span)
+      console.dir(h3)
       const divMateria = document.createElement('div');
-      const categoria = document.createElement('h3');
+      
       const titulo = document.createElement('h1');
       const resumo = document.createElement('p');
-      const fonte = document.createElement('span');
+      const fonte = document.createElement('h3');
       const imagem = document.createElement('img');
+      const categoria = document.createElement('span');
 
       categoria.innerText = `${h3.innerText}`;
-      console.dir(h3)
-      console.log(categoria)
       titulo.innerText = `${h1.innerText}`;
       resumo.innerText = `${p.innerText}`;
       fonte.innerText = `Fonte: ${span.innerText}.`;
