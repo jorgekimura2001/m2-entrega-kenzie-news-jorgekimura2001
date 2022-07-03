@@ -7,10 +7,17 @@ main{
     flex-direction: column;
     align-items: center;
 }
+:root{
+    --azul: #5163D3;
+    --cinza: #EEEEEE;
+    --azul-claro: #D7E4FB;
+    --branco: #FFFFFF;
+    --preto: #1B1C1E;
+    --cinza-claro: #F9F9F9;
+}
 
 /* Header */
 header{
-    /* width: 1440px; */
     margin-bottom: 96px;
 }
 .logo{
@@ -18,13 +25,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5163D3;
+    background-color: var(--azul);
 }
 /* DivPrincipal */
 .card__principal{
     margin: 0 230px 72px;
     max-width: 980px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--cinza);
     box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
     border-radius: 4px;
 }
@@ -38,19 +45,19 @@ header{
 }
 .categoriaPrincipal{
     margin-left: 18px;
-    background: #D7E4FB;
+    background: var(--azul-claro);
     border-radius: 4px;
     padding: 2px 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #5163D3;
+    color: var(--azul);
 }
 .tituloPrincipal{
     margin: 24px 39px 76px 24px;
     font-weight: 700;
     font-size: 36px;
     line-height: 110%;
-    color: #5163D3;
+    color: var(--azul);
 }
 
