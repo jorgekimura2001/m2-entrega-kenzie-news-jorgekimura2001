@@ -8,7 +8,8 @@
 }
 body{
     background-color: var(--cinza-claro);
-    margin: 0 33px
+    margin: 0 33px;
+    font-family: 'Roboto Slab', serif;
 }
 main{
     display: flex;
@@ -50,13 +51,12 @@ header{
     padding: 2px 10px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
     color: var(--azul);
 }
 .tituloPrincipal{
     margin: 24px 39px 76px 24px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     color: var(--azul);
 }
 .resumoPrincipal{
@@ -74,4 +74,7 @@ header{
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
+}
+.imagemPrincipal{
+    width: 420px;
 }
