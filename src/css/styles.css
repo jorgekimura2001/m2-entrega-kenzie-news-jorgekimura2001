@@ -78,3 +78,23 @@ header{
 .imagemPrincipal{
     width: 420px;
 }
+/* Div secundaria */
+.card__adjacentes{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.cardSecundario__div{
+    max-width: 569px;
+    display: flex;
+    margin-bottom: 60px;
+    margin-right: 59px;
+}
+.divMateriasConteudo{
+    height: 180px;
+}
+.cardSecundario__imagem{
+    border-radius: 4px;
+    margin-right: 37px;
+    width: 180px;
+}

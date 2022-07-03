@@ -1,6 +1,7 @@
 export default class CardPrincipal{
   static criarCardPrincipal(materia) {
-    const [img, span, h1, p, h3 ] = materia.childNodes;
+    const [img, div] = materia.childNodes;
+    const [span, h1, p, h3] = div.childNodes
   
     const divMateriaPrincipal = document.createElement("div");
     divMateriaPrincipal.className = "divMateriaPrincipal";
