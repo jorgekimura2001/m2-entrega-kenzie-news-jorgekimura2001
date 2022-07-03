@@ -13,7 +13,9 @@ export default class CardPrincipal{
     const titulo = document.createElement('h1');
     titulo.className = 'tituloPrincipal'
     const resumo = document.createElement('p');
+    resumo.className = 'resumoPrincipal'
     const fonte = document.createElement('h3');
+    fonte.className = 'fontePrincipal'
   
     const imagem = document.createElement('img');
     imagem.className = 'imagemPrincipal'
