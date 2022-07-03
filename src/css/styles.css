@@ -54,7 +54,7 @@ header{
     color: var(--azul);
 }
 .tituloPrincipal{
-    margin: 24px 39px 76px 24px;
+    margin: 24px 0 56px 24px;
     font-weight: 700;
     font-size: 28px;
     color: var(--azul);
@@ -77,4 +77,55 @@ header{
 }
 .imagemPrincipal{
     width: 420px;
+    border-radius: 4px;
+    margin-left: 39px;
+}
+/* Div secundaria */
+.card__adjacentes{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.cardSecundario__div{
+    max-width: 569px;
+    display: flex;
+    margin-bottom: 60px;
+    margin-right: 59px;
+}
+.divMateriasConteudo{
+    height: 180px;
+}
+.cardSecundario__imagem{
+    border-radius: 4px;
+    margin-right: 37px;
+    width: 180px;
+}
+.card__categoria{
+    background-color: var(--azul-claro);
+    color: var(--azul);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 2px 8px;
+}
+.card__titulo{
+    margin-top: 12px;
+    margin-bottom: 14px;
+    color: var(--azul);
+    font-weight: 500;
+font-size: 16px;
+}
+.card__resumo{
+    color: var(--preto);
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+margin-bottom: 20px;
+}
+.card__fonte{
+    margin-bottom: 17px;
+    color:var(--preto);
+    font-weight: 300;
+font-size: 10px;
+line-height: 12px;
 }
