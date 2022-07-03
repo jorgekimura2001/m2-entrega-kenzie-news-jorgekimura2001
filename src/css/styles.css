@@ -8,10 +8,10 @@
 }
 body{
     background-color: var(--cinza-claro);
-    margin: 0 33px;
     font-family: 'Roboto Slab', serif;
 }
 main{
+    margin: 0 33px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,41 +91,63 @@ header{
     display: flex;
     margin-bottom: 60px;
     margin-right: 59px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza);
+box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+border-radius: 4px;
 }
 .divMateriasConteudo{
-    height: 180px;
+    height: 200px;
+    padding-top: 15px;
 }
 .cardSecundario__imagem{
     border-radius: 4px;
     margin-right: 37px;
-    width: 180px;
+    width: 200px;
 }
 .card__categoria{
     background-color: var(--azul-claro);
     color: var(--azul);
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
     padding: 2px 8px;
+    border-radius: 4px;
 }
 .card__titulo{
-    margin-top: 12px;
-    margin-bottom: 14px;
+    margin-right: 33px;
+    margin-top: 9px;
+    margin-bottom: 10px;
     color: var(--azul);
     font-weight: 500;
-font-size: 16px;
+    font-size: 16px;
 }
 .card__resumo{
+    margin-right: 37px;
     color: var(--preto);
     font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
 }
 .card__fonte{
     margin-bottom: 17px;
     color:var(--preto);
     font-weight: 300;
-font-size: 10px;
-line-height: 12px;
+    font-size: 10px;
+   
+}
+/* footer */
+footer{
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: var(--cinza);
+}
+.rodape{
+    color: var(--preto);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
 }
