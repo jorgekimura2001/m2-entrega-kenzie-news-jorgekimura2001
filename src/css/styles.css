@@ -1,12 +1,3 @@
-body{
-    background-color: #F9F9F9;
-    margin: 0 33px
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 :root{
     --azul: #5163D3;
     --cinza: #EEEEEE;
@@ -15,7 +6,15 @@ main{
     --preto: #1B1C1E;
     --cinza-claro: #F9F9F9;
 }
-
+body{
+    background-color: var(--cinza-claro);
+    margin: 0 33px
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Header */
 header{
     margin-bottom: 96px;
@@ -42,6 +41,7 @@ header{
 }
 .divInfoPrincipal{
    padding-top: 45px;
+   box-sizing: border-box;
 }
 .categoriaPrincipal{
     margin-left: 18px;
@@ -57,7 +57,21 @@ header{
     margin: 24px 39px 76px 24px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 110%;
     color: var(--azul);
 }
-
+.resumoPrincipal{
+    color: var(--preto);
+    margin-bottom: 40px;
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.fontePrincipal{
+    color: var(--preto);
+    margin-bottom: 45px;
+    margin-left: 24px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
