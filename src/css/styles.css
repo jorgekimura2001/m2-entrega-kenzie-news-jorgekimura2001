@@ -1,0 +1,241 @@
+:root{
+    --azul: #5163D3;
+    --cinza: #EEEEEE;
+    --azul-claro: #D7E4FB;
+    --branco: #FFFFFF;
+    --preto: #1B1C1E;
+    --cinza-claro: #F9F9F9;
+}
+body{
+    background-color: var(--cinza-claro);
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    margin: 0 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Header */
+header{
+    margin-bottom: 96px;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul);
+}
+/* DivPrincipal */
+.card__principal{
+    margin: 0 230px 72px;
+    max-width: 980px;
+    border: 1px solid var(--cinza);
+    box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+    border-radius: 4px;
+}
+.divMateriaPrincipal{
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divInfoPrincipal{
+   padding-top: 45px;
+   box-sizing: border-box;
+   width: 623px;
+}
+.categoriaPrincipal{
+    margin-left: 18px;
+    background: var(--azul-claro);
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--azul);
+}
+.tituloPrincipal{
+    margin: 24px 0 56px 24px;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--azul);
+}
+.resumoPrincipal{
+    color: var(--preto);
+    margin-bottom: 40px;
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.fontePrincipal{
+    color: var(--preto);
+    margin-bottom: 45px;
+    margin-left: 24px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+.divImagemPrincipal{
+    height: 328px;
+    width: 428px;
+    border-radius: 4px;
+    margin-left: 39px;
+    margin-right: 20px;
+}
+/* Div secundaria */
+.card__adjacentes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.cardSecundario__div{
+    max-width: 569px;
+    display: flex;
+    margin-bottom: 60px;
+    margin-right: 59px;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza);
+box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+border-radius: 4px;
+}
+.divMateriasConteudo{
+    height: 200px;
+    padding-top: 15px;
+}
+.cardSecundario__imagem{
+    border-radius: 4px;
+    margin-right: 37px;
+    width: 200px;
+}
+.card__categoria{
+    background-color: var(--azul-claro);
+    color: var(--azul);
+    font-weight: 500;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.card__titulo{
+    margin-right: 33px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    color: var(--azul);
+    font-weight: 500;
+    font-size: 16px;
+}
+.card__resumo{
+    margin-right: 37px;
+    color: var(--preto);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+.card__fonte{
+    margin-bottom: 17px;
+    color:var(--preto);
+    font-weight: 300;
+    font-size: 10px;
+   
+}
+/* footer */
+footer{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: var(--cinza);
+}
+.rodape{
+    color: var(--preto);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+/* Breakpoints */
+@media (max-width: 768px){
+    header{
+        width: 100%;
+        margin-bottom: 54px;
+    }
+    main{
+        margin: 0;
+        /* width: 100%; */
+    }
+    .divMateriaPrincipal{
+        height: 390px;
+        width: 100%;
+        flex-flow: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card__principal{
+        width: 100%;
+        margin: 0 0 54px 0;
+    }
+    .cardSecundario__imagem{
+        display: none;
+    }
+    .divMateriasConteudo{
+        padding-top: 15px;
+        height: 220px;
+    }
+    .card__categoria{
+        margin-left: 16px;
+    }
+    .card__titulo{
+        margin: 10px 16px 5px;
+        font-size: 14px;
+    }
+    .card__resumo{
+        margin: 0 16px;
+    }
+    .card__fonte{
+        margin: 10px 16px;
+    }
+    .cardSecundario__div{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 48px;
+        margin-right: 0;
+    }
+    footer{
+        margin-top: 72px;
+        width: 100%;
+    }
+    .divInfoPrincipal{
+        width: 320px;
+    }
+    .divImagemPrincipal{
+        width: 250px;
+        margin: 0 10px;
+    }
+    .categoriaPrincipal{
+        font-size: 10px;
+    }
+    .tituloPrincipal{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0 10px 18px;
+    }
+    .resumoPrincipal{
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-left: 18px;
+    }
+   .fontePrincipal{
+    font-size: 10px;
+        margin-bottom: 0;
+        margin-left: 18px;
+   } 
+   .divInfoPrincipal{
+        padding-top: 0%;
+   }
+   .card__adjacentes{
+        padding: 0 32px;
+   }  
+}
