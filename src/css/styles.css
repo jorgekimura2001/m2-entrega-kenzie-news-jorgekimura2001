@@ -153,6 +153,61 @@ footer{
     font-size: 12px;
     line-height: 14px;
 }
+
+@media (max-width: 587px){
+    header{
+        width: 100%;
+        margin-bottom: 54px;
+    }
+    main{
+        width: 100%;
+    }
+    .divMateriaPrincipal{
+        height: 385px;
+        width: 100%;
+        flex-flow: nowrap;
+        align-items: center;
+    }
+    .card__principal{
+        margin: 0 0 54px 0;
+    }
+    .cardSecundario__imagem{
+        display: none;
+    }
+    .divMateriasConteudo{
+        padding-top: 25px;
+        height: 200px;
+    }
+    .card__categoria{
+        margin-left: 16px;
+    }
+    .card__titulo{
+        margin: 16px 16px 10px;
+    }
+    .card__resumo{
+        margin: 0 16px;
+    }
+    .card__fonte{
+        margin: 10px 16px;
+    }
+    .cardSecundario__div{
+        max-width: 100%;
+        margin-bottom: 48px;
+        margin-right: 0;
+    }
+    footer{
+        margin-top: 72px;
+        width: 586px;
+    }
+    .divInfoPrincipal{
+        width: 320px;
+    }
+    .divImagemPrincipal{
+        width: 200px;
+        margin: 0 10px;
+    }
+}
+
 @media (min-width: 320px){
     main{
         margin: 0;
@@ -183,64 +238,13 @@ footer{
    .divInfoPrincipal{
     padding-top: 0%;
    }
+   .cardSecundario__div{
+    max-width: 100%;
+   }
+   .card__adjacentes{
+    width: 100%;
+    padding: 0 32px;
+   }
+   
 }
 
-@media (max-width: 587px){
-    header{
-        width: 100%;
-        margin-bottom: 54px;
-    }
-    main{
-        width: 100%;
-    }
-    .divMateriaPrincipal{
-        height: 385px;
-        width: 100%;
-        flex-flow: nowrap;
-        align-items: center;
-    }
-    .card__principal{
-        margin: 0 0 54px 0;
-    }
-    .cardSecundario__imagem{
-        display: none;
-    }
-    .divMateriasConteudo{
-        padding-top: 35px;
-    }
-    .card__categoria{
-        margin-left: 16px;
-    }
-    .card__titulo{
-        margin: 16px 16px 10px;
-    }
-    .card__resumo{
-        margin: 0 16px;
-    }
-    .card__fonte{
-        margin: 10px 16px;
-    }
-    .cardSecundario__div{
-        max-width: 522px;
-        margin-bottom: 48px;
-        margin-right: 0;
-    }
-    footer{
-        margin-top: 72px;
-        width: 586px;
-    }
-    .divInfoPrincipal{
-        width: 320px;
-    }
-    .divImagemPrincipal{
-        width: 200px;
-        margin: 0 10px;
-    }
-    .divMateriasConteudo{
-        height: 180px;
-        width: 522px;
-    }
-    .card__adjacentes{
-        justify-content: flex-start;
-    }
-}
