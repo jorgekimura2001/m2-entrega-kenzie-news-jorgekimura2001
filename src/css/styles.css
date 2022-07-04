@@ -87,6 +87,7 @@ header{
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
+    width: 100%;
 }
 .cardSecundario__div{
     max-width: 569px;
@@ -153,7 +154,7 @@ footer{
     font-size: 12px;
     line-height: 14px;
 }
-
+/* Breakpoints */
 @media (max-width: 587px){
     header{
         width: 100%;
@@ -175,14 +176,15 @@ footer{
         display: none;
     }
     .divMateriasConteudo{
-        padding-top: 25px;
-        height: 200px;
+        padding-top: 15px;
+        height: 220px;
     }
     .card__categoria{
         margin-left: 16px;
     }
     .card__titulo{
-        margin: 16px 16px 10px;
+        margin: 10px 16px 5px;
+        font-size: 14px;
     }
     .card__resumo{
         margin: 0 16px;
@@ -197,7 +199,7 @@ footer{
     }
     footer{
         margin-top: 72px;
-        width: 586px;
+        width: 100%;
     }
     .divInfoPrincipal{
         width: 320px;
@@ -207,7 +209,6 @@ footer{
         margin: 0 10px;
     }
 }
-
 @media (min-width: 320px){
     main{
         margin: 0;
@@ -236,15 +237,10 @@ footer{
         margin-left: 18px;
    } 
    .divInfoPrincipal{
-    padding-top: 0%;
-   }
-   .cardSecundario__div{
-    max-width: 100%;
+        padding-top: 0%;
    }
    .card__adjacentes{
-    width: 100%;
-    padding: 0 32px;
-   }
-   
+        width: 100%;
+        padding: 0 32px;
+   }  
 }
-
