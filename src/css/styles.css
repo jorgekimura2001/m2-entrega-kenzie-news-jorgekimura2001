@@ -43,6 +43,7 @@ header{
 .divInfoPrincipal{
    padding-top: 45px;
    box-sizing: border-box;
+   width: 623px;
 }
 .categoriaPrincipal{
     margin-left: 18px;
@@ -75,8 +76,9 @@ header{
     font-size: 12px;
     line-height: 14px;
 }
-.imagemPrincipal{
-    width: 420px;
+.divImagemPrincipal{
+    height: 360px;
+    width: 428px;
     border-radius: 4px;
     margin-left: 39px;
 }
@@ -150,4 +152,65 @@ footer{
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
+}
+
+@media (max-width: 587px){
+    header{
+        width: 100vw;
+        margin-bottom: 54px;
+    }
+    main{
+        width: 586px;
+        margin: 0;
+    }
+    .divMateriaPrincipal{
+        height: 385px;
+        width: 586px;
+        flex-flow: column wrap;
+    }
+    .card__principal{
+        max-width: 586px;
+        margin: 0 0 54px 0;
+    }
+    .cardSecundario__imagem{
+        display: none;
+    }
+    .divMateriasConteudo{
+        padding-top: 35px;
+    }
+    .card__categoria{
+        margin-left: 16px;
+    }
+    .card__titulo{
+        margin: 16px 16px 10px;
+    }
+    .card__resumo{
+        margin: 0 16px;
+    }
+    .card__fonte{
+        margin: 10px 16px;
+    }
+    .cardSecundario__div{
+        max-width: 522px;
+        margin-bottom: 48px;
+        margin-right: 0;
+    }
+    footer{
+        margin-top: 72px;
+        width: 586px;
+    }
+    .divInfoPrincipal{
+        width: 320px;
+    }
+    .divImagemPrincipal{
+        width: 200px;
+        margin: 0;
+    }
+    .divMateriasConteudo{
+        height: 180px;
+        width: 522px;
+    }
+    .card__adjacentes{
+        justify-content: flex-start;
+    }
 }

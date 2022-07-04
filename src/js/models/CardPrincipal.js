@@ -18,17 +18,20 @@ export default class CardPrincipal{
     const fonte = document.createElement('h3');
     fonte.className = 'fontePrincipal'
   
-    const imagem = document.createElement('img');
-    imagem.className = 'imagemPrincipal'
-    
+    const divImagem = document.createElement("div");
+    divImagem.className = 'divImagemPrincipal'
+    const url = `url(${img.src})`;
+    divImagem.style.backgroundImage = url
     categoria.innerText = `${span.innerText}`;
     titulo.innerText = `${h1.innerText}`;
     resumo.innerText = `${p.innerText}`;
     fonte.innerText = `${h3.innerText}`;
-    imagem.src = `${img.src}`;
 
+    const divMobile = document.createElement('div');
+    divMobile.className = 'hidden';
+  
     divInfoPrincipal.append(categoria, titulo, resumo, fonte);
-    divMateriaPrincipal.append(divInfoPrincipal, imagem);
+    divMateriaPrincipal.append(divInfoPrincipal, divImagem);
     return divMateriaPrincipal
     }
 }
